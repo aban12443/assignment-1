@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Detail</title>
+    </head>
+    <body bgcolor="blanchedalmond">
+       
+        
+        <h1>Detail</h1>
+        <p>This is the detail page.</p>
+        <form>
+            <label for="name">First Name:</label>
+        <input type="text" placeholder=" max 20 characters" maxlength="20">
+        <br><br>
+        <label for="name">Last Name:</label>
+
+        <input type="text" placeholder=" max 20 characters" maxlength="20">
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" value="2024-06-01" min="1900-01-01" max="2100-12-31">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" value="+1-555-555-5555" pattern="\+?[0-9\s\-]{7,15}">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" value="male" name="gender" checked>
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" value="other" name="gender">
+        <label for="other">Other</label>
+
+        <br><br>  
+        <label for="address">Address:</label>      
+        <textarea name="address" cols="20" rows="4">Enter your address...</textarea>
+        <br><br>
+        <label for="device">Devices Owned:</label>
+        <input type="checkbox" value="laptop" name="device" checked>
+        <label for="laptop">Laptop</label>
+        <input type="checkbox" value="NO" name="device">
+        <label for="tablet">NO</label>
+        <input type="checkbox" value="smartphone" name="device">
+        <label for="smartphone">Smartphone</label>
+        <br><br>
+        <label for="country"> Country:</label>
+        <input type="text" list="countries" placeholder="Type your country" maxlength="20" <p>(Max 20 characters) </p>
+        <datalist id="countries">
+            <option value="Pakistan">
+            <option value="India">
+            <option value="USA">
+            <option value="UK">
+            <option value="Canada">
+        </datalist>
+        <br><br>
+        <label for="Select city"> City:</label>
+        <input type="text" list="Pakistan" placeholder="Type your city" maxlength="20" <p>(Max 20 characters) </p>
+
+        
+        <br><br>
+        <label for="posta;lcode"> Postal Code:</label>
+        <input type="text" placeholder=" max 10 characters" maxlength="10">
+        <br><br>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+    <tr>
+        <th rowspan="5">Qualification:</th>
+        <th>S.No.</th>
+        <th>Examinations</th>
+        <th>Board</th>
+        <th>Percentage</th>
+        <th>Year of Passing</th>
+    </tr>
+
+    <tr>
+        <td>1.</td>
+        <td>Class X</td>
+        <td><input type="text" name="board_x"></td>
+        <td><input type="text" name="percentage_x"></td>
+        <td><input type="text" name="year_x"></td>
+    </tr>
+
+    <tr>
+        <td>2.</td>
+        <td>Class IX</td>
+        <td><input type="text" name="board_ix"></td>
+        <td><input type="text" name="percentage_ix"></td>
+        <td><input type="text" name="year_ix"></td>
+    </tr>
+
+    <tr>
+        <td>3.</td>
+        <td>Graduation</td>
+        <td><input type="text" name="board_grad"></td>
+        <td><input type="text" name="percentage_grad"></td>
+        <td><input type="text" name="year_grad"></td>
+    </tr>
+
+    <tr>
+        <td>4.</td>
+        <td>Masters</td>
+        <td><input type="text" name="board_masters"></td>
+        <td><input type="text" name="percentage_masters"></td>
+        <td><input type="text" name="year_masters"></td>
+    </tr>
+</table>
+        <br><br>
+         <center><input type="submit" value="Submit">        
+<input type="reset" value="Reset"></center>
+        <br><br>    
+       
+
+
+        </form>
+    </body>
+</html>
